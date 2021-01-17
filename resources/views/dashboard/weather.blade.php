@@ -1,4 +1,4 @@
-@if($items->weatherData->weather !== null)
+@if($items->weatherData->weather !== null && $items->weatherData->weather !== false)
     @php($weather = current($items->weatherData->weather))
 
     <div class="row">
