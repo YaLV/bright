@@ -201,6 +201,25 @@ return [
       ),
     )),
   ),
+  'C:\\wamp64\\www\\app\\Services\\Weather.php' => 
+  array (
+    0 => 
+    PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Only booleans are allowed in a ternary operator condition, mixed given.',
+       'file' => 'C:\\wamp64\\www\\app\\Services\\Weather.php',
+       'line' => 26,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\wamp64\\www\\app\\Services\\Weather.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 26,
+       'nodeType' => 'PhpParser\\Node\\Expr\\Ternary',
+       'identifier' => NULL,
+       'metadata' => 
+      array (
+      ),
+    )),
+  ),
 ); },
 	'dependencies' => array (
   'C:\\wamp64\\www\\app\\Console\\Kernel.php' => 
@@ -633,7 +652,7 @@ return [
   ),
   'C:\\wamp64\\www\\app\\Services\\Weather.php' => 
   array (
-    'fileHash' => '68bdf3e7a218ef48cfbd0d8c8c484f9ee0082ade',
+    'fileHash' => '496e6df06e57a3c2c89ea23674d1a8acfabf7227',
     'dependentFiles' => 
     array (
       0 => 'C:\\wamp64\\www\\app\\Http\\Controllers\\DashboardController.php',

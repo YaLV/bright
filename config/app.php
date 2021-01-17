@@ -4,7 +4,7 @@ return [
     'date_format' => 'd.m.Y',
     'javascript_date_format' => 'dd.mm.yyyy',
 
-    'weather_api_key' => '', // RapidAPI key
+    'weather_api_key' => '', // Populate with RapidApi key
     'weather_location' => "q=Riga,lv&units=metric",
     'weather_icon_location' => 'http://api.openweathermap.org/img/w/%s.png',
 

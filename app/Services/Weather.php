@@ -9,6 +9,7 @@ use App\Traits\CacheTrait;
 class Weather
 {
     use CacheTrait;
+
     /**
      * @var object|null
      */
@@ -22,10 +23,7 @@ class Weather
     public function __construct(NetworkGather $network)
     {
         $this->network = $network;
-        if (config('app.weather_api_key') ?: false) {
-            return;
-        }
-        $this->weatherData = \json_decode($this->cached('weather') ?? $this->setCache('weather', $this->getWeatherData(), 60));
+        $this->weatherData = \json_decode($this->cached('weather-'.config('app.weather_api_key')) ?? $this->setCache('weather-'.config('app.weather_api_key'), $this->getWeatherData(), 60));
     }
 
     private function getWeatherData(): string

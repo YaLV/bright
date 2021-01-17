@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
 return PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'C:\\wamp64\\www\\app\\Services\\Weather.php-1610732431,C:\\wamp64\\www\\app\\Traits\\CacheTrait.php-1610734167',
+   'variableKey' => 'C:\\wamp64\\www\\app\\Services\\Weather.php-1610886522,C:\\wamp64\\www\\app\\Traits\\CacheTrait.php-1610734167',
    'data' => 
   array (
     '3e2bcc819fcf5ce04713d591f21f0b29' => 
