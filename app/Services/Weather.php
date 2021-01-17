@@ -22,6 +22,9 @@ class Weather
     public function __construct(NetworkGather $network)
     {
         $this->network = $network;
+        if (config('app.weather_api_key') ?: false) {
+            return;
+        }
         $this->weatherData = \json_decode($this->cached('weather') ?? $this->setCache('weather', $this->getWeatherData(), 60));
     }
 
